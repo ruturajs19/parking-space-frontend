@@ -48,8 +48,9 @@ const ReleaseParkingSpace = () => {
   return (
     <>
       {parkingDetails ? (
-        <div className="parking-details">
-          Vehicle Released.<br/>
+        <div className="parking-details" data-testid="parking-details">
+          Vehicle Released.
+          <br />
           <Button
             type="button"
             label={"Okay"}

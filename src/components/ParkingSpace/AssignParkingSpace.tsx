@@ -42,7 +42,7 @@ const AssignParkingSpace = () => {
     <>
       {parkingDetails ? (
         <div>
-          <div className="parking-details">
+          <div className="parking-details" data-testid="parking-details">
             Floor: {parkingDetails.floor}<br/>
             Vehicle Size: {parkingDetails.size}<br/>
             Bay: {parkingDetails.bay}<br/>
