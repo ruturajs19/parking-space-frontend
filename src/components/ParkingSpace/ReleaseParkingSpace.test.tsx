@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import ReleaseParkingSpace from "./ReleaseParkingSpace";
 
-test("AssignParkingSpace Component", () => {  
+test("ReleaseParkingSpace Component", () => {  
   const {container} = render(<ReleaseParkingSpace />);
   fireEvent.change(container.getElementsByTagName("select")[0], {
     target: { value: "l" },
