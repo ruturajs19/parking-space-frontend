@@ -18,15 +18,15 @@ const Dropdown: FC<DropdownProps> = ({
     <>
       <label>{label}:</label>
       <select
-        name="vehicleSize"
         className="dropdown-box"
         value={value}
+        data-testid="select"
         onChange={(event) => {
           changeHandler(event.target.value);
         }}
       >
         {options.map((item: any, index: number) => (
-          <option key={index}>{item}</option>
+          <option key={index} data-testid="option">{item}</option>
         ))}
       </select>
     </>

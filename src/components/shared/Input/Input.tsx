@@ -17,6 +17,7 @@ const Input: FC<InputProps> = ({ label, type, min, value, changeHandler }) => {
         type={type}
         min={min}
         onChange={(event) => changeHandler(event.target.value)}
+        data-testid="custom-input"
       />
     </>
   );

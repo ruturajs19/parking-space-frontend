@@ -15,7 +15,6 @@ const AssignParkingSpace = () => {
 
   const submitHandler = async (event: FormEvent) => {
     event.preventDefault();
-    console.log(vehicleSize, regNumber);
     try {
       const response = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/assignBay/${process.env.REACT_APP_PS_ID}`,
